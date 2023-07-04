@@ -5,11 +5,13 @@ main:
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "HOME"
-    url: https://bbjbc.github.io
+    url: /
   - title: "INTRODUCE"
     url: /about/
+  - title: "TAGS"
+    url: /tags/
   - title: "CATEGORY"
-    url: "/categories/"
+    url: /categories/
 
 sidebar-category:
   - title: "카테고리"
@@ -17,6 +19,6 @@ sidebar-category:
       - title: "About"
         url: /about/
       - title: "JavaScript"
-        url: "/javascript"
+        url: /javascript
       - title: "React"
-        url: "/react"
+        url: /react
