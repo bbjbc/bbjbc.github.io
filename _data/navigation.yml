@@ -10,6 +10,8 @@ main:
     url: /about/
   - title: "CATEGORY"
     url: /categories/
+  - title: "TAGS"
+    url: /tags/
 
 sidebar-category:
   - title: "카테고리"
