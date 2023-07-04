@@ -4,9 +4,19 @@ main:
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Introduce"
+  - title: "HOME"
+    url: https://bbjbc.github.io
+  - title: "INTRODUCE"
     url: /about/
-  - title: "Category"
+  - title: "CATEGORY"
     url: "/categories/"
-  - title: "Tags"
-    url: /tags/
+
+sidebar-category:
+  - title: "카테고리"
+    children:
+      - title: "About"
+        url: /about/
+      - title: "JavaScript"
+        url: "/javascript"
+      - title: "React"
+        url: "/react"
