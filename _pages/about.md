@@ -5,16 +5,45 @@ author-profile: true
 sidebar_main: true
 ---
 
-A variety of common markup showing how the theme styles them.
+<div align="center">
+<br/>
 
-## Header two
+<b>🐶 최고의 열정을 뽐내는 깃허브 쿼카 🐒<b/>
 
-### Header three
+<br />
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fbbjbc%2Fhit-counter&count_bg=%2360D680&title_bg=%23956031&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
+<br/>
+<br/>
+안녕하세요! 최고의 열정을 뽐내는 깃허브 쿼카 Boongranii라고 합니다.
+<div>열정은 매사 <b>500% 이상</b>을 내려고 노력합니다.</div>
+<div>하지만 노력만으로는 성공할 수 없기 때문에 열심히 공부하려고 합니다.</div>
+<div>어디서나 필요로 하는 <b>프론트엔드 개발자</b>가 되도록 노력하겠습니다.🥇</div>
+<div><b><i>No pain, no gain</i></b></div>
+<br/>
 
-#### Header four
+<b>👑 Certificate 👑<b/>
+<br/>
 
-##### Header five
+<img src="https://img.shields.io/badge/SQLD-3776AB?style=for-the-badge">
+<img src="https://img.shields.io/badge/CSTS(FL)-39sa8a?style=for-the-badge">
 
-###### Header six
+<br/><br/>
 
-## Blockquotes
+<b>📮CONTACT📮<b/>
+<br/>
+<span>📫aoo4550@naver.com</span><br/>
+<span>🏫aoo4550@kyonggi.ac.kr</span>
+<br/>
+<br/>
+
+<b> ⚔️ Skills ⚔️<b/>
+<br/>
+
+<!-- <img src="https://img.shields.io/badge/C-blue?style=for-the-badge&logo=C&logoColor=white"> -->
+<!-- <img src="https://img.shields.io/badge/JAVA-007396?style=for-the-badge&logo=Java&logoColor=white"> -->
+<!-- <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"><br> -->
+<!-- <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"> -->
+<!-- <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"> -->
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white"><br>
