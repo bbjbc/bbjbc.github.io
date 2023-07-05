@@ -133,11 +133,11 @@ a {
   }
 
   &:visited {
-    color: $link-color-visited;
+    color: #2d2020;
   }
 
   &:hover {
-    color: $link-color-hover;
+    color: #265529d1;
     outline: 0;
   }
 }
@@ -256,7 +256,7 @@ figcaption {
     transition: $global-transition;
 
     &:hover {
-      color: $link-color-hover;
+      color: #0d0121;
     }
   }
 }
