@@ -18,7 +18,16 @@
   }
 }
 
+h2.archive__item-title.no_toc {
+  margin-top: -1px;
+}
+
 .archive__item {
+  padding: 1%;
+  margin: 2px;
+  border-radius: 10px;
+  background-color: #fbfff7;
+  width: 100%;
   position: relative;
 
   a {
@@ -31,6 +40,11 @@
   }
 }
 
+.archive__item:hover {
+  transition-duration: 1s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 2px 2px rgba(0, 0, 0, 0.23);
+}
+
 .archive__subtitle {
   margin: 1.414em 0 0.5em;
   padding-bottom: 0.5em;
@@ -39,7 +53,7 @@
   border-bottom: 1px solid $border-color;
 
   + .list__item .archive__item-title {
-    margin-top: 0.5em;
+    margin-top: 1em;
   }
 }
 
@@ -51,7 +65,7 @@
   text-overflow: ellipsis;
 
   a[rel="permalink"]::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -73,7 +87,7 @@
 }
 
 .archive__item-excerpt {
-  margin-top: 0;
+  padding: 1px;
   font-size: $type-size-6;
 
   & + p {
@@ -123,6 +137,10 @@
 /*
    List view
    ========================================================================== */
+
+.list__item {
+  padding: 0.7%;
+}
 
 .list__item {
   .page__meta {
@@ -285,7 +303,7 @@
   }
 
   a.btn::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -311,7 +329,7 @@
     }
 
     a.btn::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -352,7 +370,7 @@
     }
 
     a.btn::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -396,7 +414,7 @@
     }
 
     a.btn::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -442,7 +460,7 @@
    Wide Pages
    ========================================================================== */
 
-  .wide {
+.wide {
   .archive {
     @include breakpoint($large) {
       padding-right: 0;
@@ -457,7 +475,7 @@
 /* Place inside a single layout */
 
 .layout--single {
-	.feature__wrapper {
-		display: inline-block;
-	}
+  .feature__wrapper {
+    display: inline-block;
+  }
 }
