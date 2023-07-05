@@ -14,11 +14,17 @@ main:
     url: /tags/
 
 sidebar-category:
-  - title: "카테고리"
+  - title: "Boongranii"
     children:
       - title: "About"
         url: /about/
+  - title: "Category"
+    children:
+      - title: "categories"
+        url: /categories/
+  - title: "STUDIARY"
+    children:
       - title: "JavaScript"
-        url: /javascript
+        url: /javascript/
       - title: "React"
-        url: /react
+        url: /react/

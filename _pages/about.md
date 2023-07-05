@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "나? 나는 뭐냐면..더 보기"
 permalink: /about/
 author-profile: true
 sidebar_main: true
