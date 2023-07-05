@@ -5,27 +5,48 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         {% unless logo_path == empty %}
-          <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
+        <a class="site-logo" href="{{ '/' | relative_url }}"
+          ><img
+            src="{{ logo_path | relative_url }}"
+            alt="{{ site.masthead_title | default: site.title }}"
+        /></a>
         {% endunless %}
         <a class="site-title" href="{{ '/' | relative_url }}">
-          {{ site.masthead_title | default: site.title }}
-          {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
+          {{ site.masthead_title | default: site.title }} {% if site.subtitle
+          %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
         </a>
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
-            <li class="masthead__menu-item">
-              <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
-            </li>
+          <li class="masthead__menu-item">
+            <a
+              href="{{ link.url | relative_url }}"
+              {%
+              if
+              link.description
+              %}
+              title="{{ link.description }}"
+              {%
+              endif
+              %}
+              >{{ link.title }}</a
+            >
+          </li>
           {%- endfor -%}
         </ul>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
+          <span class="visually-hidden"
+            >{{ site.data.ui-text[site.locale].search_label | default: "Toggle
+            search" }}</span
+          >
           <i class="fas fa-search"></i>
         </button>
         {% endif %}
         <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
+          <span class="visually-hidden"
+            >{{ site.data.ui-text[site.locale].menu_label | default: "Toggle
+            menu" }}</span
+          >
           <div class="navicon"></div>
         </button>
         <ul class="hidden-links hidden"></ul>
@@ -33,3 +54,177 @@
     </div>
   </div>
 </div>
+
+<!-- {% capture logo_path %}{{ site.logo }}{% endcapture %}
+
+<style>
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body[data-darkmode="on"] {
+    background-color: #1e1f21;
+    color: #e8e8e8 !important;
+  }
+  /* Darkmode Toggle */
+  body[data-darkmode="on"] .darkmode > .inner {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  .darkmode > .inner {
+    position: relative;
+    display: inline-flex;
+    padding: 5px;
+    border-radius: 1.5em;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .darkmode label {
+    cursor: pointer;
+  }
+  .darkmode label:first-of-type {
+    padding: 5px 5px 5px 10px;
+    border-radius: 50% 0 0 50%;
+  }
+  .darkmode label:last-of-type {
+    padding: 5px 10px 5px 5px;
+    border-radius: 0 50% 50% 0;
+  }
+  .darkmode i {
+    font-size: 1.5em;
+    color: #aaa;
+  }
+  .darkmode input[type="radio"] {
+    display: none;
+  }
+  .darkmode input[type="radio"]:checked + label > i {
+    color: #fff;
+    transition: all 0.35s ease-in-out;
+  }
+  .darkmode .darkmode-bg {
+    width: 39px;
+    height: 34px;
+    position: absolute;
+    left: 5px;
+    border-radius: 50px 15px 15px 50px;
+    z-index: -1;
+    transition: all 0.35s ease-in-out;
+    background-color: #03a9f4;
+  }
+  #toggle-radio-dark:checked ~ .darkmode-bg {
+    border-radius: 15px 50px 50px 15px;
+    top: 5px;
+    left: 44px;
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    //다크모드 토글
+    if (document.querySelector(".darkmode")) {
+      if (localStorage.getItem("darkmode") == "on") {
+        //다크모드 켜기
+        document.body.dataset.darkmode = "on";
+        document.querySelector("#toggle-radio-dark").checked = true;
+      }
+      //다크모드 이벤트 핸들러
+      document.querySelector(".darkmode").addEventListener(
+        "click",
+        (e) => {
+          if (e.target.classList.contains("todark")) {
+            document.body.dataset.darkmode = "on";
+            localStorage.setItem("darkmode", "on");
+          } else if (e.target.classList.contains("tolight")) {
+            document.body.dataset.darkmode = "off";
+            localStorage.setItem("darkmode", "off");
+          }
+        },
+        false
+      );
+    } else {
+      localStorage.removeItem("darkmode");
+    }
+  });
+</script>
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        {% unless logo_path == empty %}
+        <a class="site-logo" href="{{ '/' | relative_url }}"
+          ><img
+            src="{{ logo_path | relative_url }}"
+            alt="{{ site.masthead_title | default: site.title }}"
+        /></a>
+        {% endunless %}
+        <a class="site-title" href="{{ '/' | relative_url }}">
+          {{ site.masthead_title | default: site.title }} {% if site.subtitle
+          %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
+        </a>
+        <ul class="visible-links">
+          {%- for link in site.data.navigation.main -%}
+          <li class="masthead__menu-item">
+            <a
+              href="{{ link.url | relative_url }}"
+              {%
+              if
+              link.description
+              %}
+              title="{{ link.description }}"
+              {%
+              endif
+              %}
+              >{{ link.title }}</a
+            >
+          </li>
+          {%- endfor -%}
+        </ul>
+        {% if site.search == true %}
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden"
+            >{{ site.data.ui-text[site.locale].search_label | default: "Toggle
+            search" }}</span
+          >
+          <i class="fas fa-search"></i>
+        </button>
+        {% endif %}
+
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden"
+            >{{ site.data.ui-text[site.locale].menu_label | default: "Toggle
+            menu" }}</span
+          >
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+      <div class="wrap">
+        <div class="darkmode">
+          <div class="inner">
+            <input
+              type="radio"
+              name="toggle"
+              id="toggle-radio-light"
+              checked
+            /><label for="toggle-radio-light" class="tolight"
+              ><i class="fas fa-sun tolight"></i
+            ></label>
+            <input type="radio" name="toggle" id="toggle-radio-dark" /><label
+              for="toggle-radio-dark"
+              class="todark"
+              ><i class="fas fa-moon todark"></i
+            ></label>
+            <div class="darkmode-bg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
