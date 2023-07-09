@@ -1,5 +1,5 @@
 ---
-title: "첫 포스팅"
+title: "[Post] 첫 포스팅"
 categories: post
 tags: [post, jekyll, blog, markup]
 author-profile: true
