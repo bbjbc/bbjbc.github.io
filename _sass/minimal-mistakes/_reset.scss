@@ -115,6 +115,19 @@ sub {
 
 /* img border in anchor's and image quality */
 
+article.archive__item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+@media (max-width: 440px) {
+  article.archive__item img {
+    height: 150px;
+  }
+}
+
 img {
   /* Responsive images (ensure images don't scale beyond their parents) */
   max-width: 100%; /* part 1: Set a maximum relative to the parent*/
