@@ -28,3 +28,5 @@ sidebar-category:
         url: /javascript/
       - title: "React"
         url: /react/
+      - title: "Http"
+        url: /http/

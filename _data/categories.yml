@@ -1,4 +1,6 @@
 ---
+http:
+  image: ../assets/images/http.jpg
 react:
   image: ../assets/images/react.jpg
 javascript:
