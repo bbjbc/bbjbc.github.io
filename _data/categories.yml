@@ -1,4 +1,6 @@
 ---
+node:
+  image: ../assets/images/node.png
 http:
   image: ../assets/images/http.jpg
 react:
