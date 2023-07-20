@@ -1,6 +1,6 @@
 ---
 title: "[React] 클래스 컴포넌트 구축 방법"
-categories: [javascript, react]
+categories: [react]
 tags: [javascript, react, component]
 author-profile: true
 sidebar_main: true

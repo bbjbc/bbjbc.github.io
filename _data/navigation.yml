@@ -24,8 +24,6 @@ sidebar-category:
         url: /categories/
   - title: "STUDIARY"
     children:
-      - title: "JavaScript"
-        url: /javascript/
       - title: "React"
         url: /react/
       - title: "Http"

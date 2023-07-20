@@ -1,6 +1,6 @@
 ---
 title: "[React] 클래스 컴포넌트 - 컨텍스트 및 오류 경계"
-categories: [javascript, react]
+categories: [react]
 tags: [javascript, react, component]
 author-profile: true
 sidebar_main: true
@@ -241,7 +241,7 @@ class ErrorBoundary extends Component {
 
 위와 같이 오류 처리를 하는 것을 볼 수 있습니다.
 
-> **아까처럼 검정화면이 떠요!**<br/>
+> **아까처럼 검정화면이 떠요!**`<br/>`
 > 현재 개발용 서버라 그렇지 다음에 배포용 서버로 하면 뜨지 않고 바로 위 사진과 같이 렌더링 될 것입니다!
 > 검정색 화면이 뜬다면 오버레이를 닫을 수 있으니 참고하시기 바랍니다!
 

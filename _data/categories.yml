@@ -5,8 +5,6 @@ http:
   image: ../assets/images/http.jpg
 react:
   image: ../assets/images/react.jpg
-javascript:
-  image: ../assets/images/react.jpg
 post:
   image: ../assets/images/daily.jpg
 ---
