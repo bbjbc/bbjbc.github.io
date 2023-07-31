@@ -12,6 +12,8 @@ main:
     url: /categories/
   - title: "TAGS"
     url: /tags/
+  - title: "🔍"
+    url: /search/
 
 sidebar-category:
   - title: "Boongranii"
