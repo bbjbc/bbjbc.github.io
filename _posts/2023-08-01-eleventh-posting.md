@@ -1,6 +1,6 @@
 ---
 title: "[Node] Express + Sequelize"
-categories: [node]
+categories: [sequelize, node]
 tags: [express, node, database, sql, sequelize]
 author-profile: true
 sidebar_main: true

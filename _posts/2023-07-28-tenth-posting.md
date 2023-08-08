@@ -1,6 +1,6 @@
 ---
 title: "[Node] Express에서 SQL 연결 및 사용"
-categories: [node]
+categories: [mysql, node]
 tags: [express, node, database, sql]
 author-profile: true
 sidebar_main: true
