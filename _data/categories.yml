@@ -1,4 +1,6 @@
 ---
+cookie:
+  image: ../assets/images/cookie.png
 mongodb:
   image: ../assets/images/mongodb.png
 mysql:
