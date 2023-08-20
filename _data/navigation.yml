@@ -22,13 +22,23 @@ sidebar-category:
         url: /about/
   - title: "Category"
     children:
-      - title: "categories"
+      - title: "Categories"
         url: /categories/
   - title: "STUDIARY"
     children:
-      - title: "React"
+      - title: "react"
         url: /react/
-      - title: "Http"
+      - title: "http"
         url: /http/
-      - title: "Node"
+      - title: "node"
         url: /node/
+      - title: "cookie"
+        url: /cookie/
+      - title: "mongodb"
+        url: /mongodb/
+      - title: "sequelize"
+        url: /Sequelize/
+      - title: "mysql"
+        url: /mysql/
+      - title: "authentication"
+        url: /authentication/

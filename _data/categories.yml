@@ -1,4 +1,6 @@
 ---
+authentication:
+  image: ../assets/images/authentication.jpg
 cookie:
   image: ../assets/images/cookie.png
 mongodb:
