@@ -5,7 +5,9 @@
   {% if page.sidebar.title %}<h3 class="nav__title" style="padding-left: 0;">{{ page.sidebar.title }}</h3>{% endif %}
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
-  <li> 전체 글 수 {{ total_post_count }}개 </li>
+  <li class="total-post-count" style="font-size: 18px;">
+    💫 총 포스팅 수 <span class="count" style="font-size: 24px;">{{ total_post_count }}</span>개
+  </li>
   <ul class="nav__items">
     {% for nav in navigation %}
       <li>
