@@ -14,10 +14,33 @@
     {% include head/custom.html %}
   </head>
   <style>
-    /* 사이드바 스크롤바 없애기 */
-    .sidebar{ -ms-overflow-style: none; }
-    .sidebar::-webkit-scrollbar{ display:none; }
-  </style>
+    /* 기본 스크롤바 스타일 */
+    .sidebar {
+        overflow: hidden;
+    }
+
+    /* 스크롤 영역에 호버 시에만 스크롤바 표시 */
+    .sidebar:hover {
+        overflow: auto; 
+    }
+
+    .sidebar::-webkit-scrollbar {
+        width: 7px; 
+    }
+
+    .sidebar::-webkit-scrollbar-thumb {
+        background-color: #e5ebe5; 
+        border-radius: 6px; 
+    }
+
+    .sidebar::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    .sidebar:hover::-webkit-scrollbar-thumb {
+        background-color: #9fbe9f; 
+    }
+</style>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
     {% include_cached skip-links.html %}
