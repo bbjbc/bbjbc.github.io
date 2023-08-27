@@ -37,7 +37,7 @@ sidebar-category:
       - title: "mongodb"
         url: /mongodb/
       - title: "sequelize"
-        url: /Sequelize/
+        url: /sequelize/
       - title: "mysql"
         url: /mysql/
       - title: "authentication"
