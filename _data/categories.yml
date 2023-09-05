@@ -1,6 +1,8 @@
 ---
 authentication:
   image: ../assets/images/authentication.jpg
+javascript:
+  image: ../assets/images/javascript.jpg
 cookie:
   image: ../assets/images/cookie.png
 mongodb:

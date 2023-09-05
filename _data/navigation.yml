@@ -42,3 +42,5 @@ sidebar-category:
         url: /mysql/
       - title: "authentication"
         url: /authentication/
+      - title: "javascript"
+        url: /javascript/
