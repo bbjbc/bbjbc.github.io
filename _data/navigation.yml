@@ -28,8 +28,8 @@ sidebar-category:
     children:
       - title: "react"
         url: /react/
-      - title: "http"
-        url: /http/
+      - title: "network"
+        url: /network/
       - title: "node"
         url: /node/
       - title: "cookie"

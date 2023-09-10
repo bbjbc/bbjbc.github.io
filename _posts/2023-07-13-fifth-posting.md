@@ -1,7 +1,7 @@
 ---
-title: "[HTTP] 리액트 HTTP 요청"
-categories: [http, react]
-tags: [http, react, javascript, firebase]
+title: "[Network] 리액트 HTTP 요청"
+categories: [network, react]
+tags: [http, react, network, firebase]
 author-profile: true
 sidebar_main: true
 main: true
