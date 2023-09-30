@@ -1,6 +1,8 @@
 ---
 authentication:
   image: ../assets/images/authentication.jpg
+graphql:
+  image: ../assets/images/graphql.png
 javascript:
   image: ../assets/images/javascript.jpg
 cookie:
