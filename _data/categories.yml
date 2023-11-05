@@ -1,6 +1,8 @@
 ---
 authentication:
   image: ../assets/images/authentication.jpg
+algorithm:
+  image: ../assets/images/programmers.png
 graphql:
   image: ../assets/images/graphql.png
 javascript:
