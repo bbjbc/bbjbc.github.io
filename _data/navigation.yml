@@ -48,3 +48,5 @@ sidebar-category:
         url: /graphql/
       - title: "algorithm"
         url: /algorithm/
+      - title: "redux"
+        url: /redux/

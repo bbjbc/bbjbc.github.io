@@ -1,4 +1,6 @@
 ---
+redux:
+  image: ../assets/images/redux.png
 authentication:
   image: ../assets/images/authentication.jpg
 algorithm:
