@@ -1,4 +1,6 @@
 ---
+jotai:
+  image: ../assets/images/jotai.png
 redux:
   image: ../assets/images/redux.png
 authentication:

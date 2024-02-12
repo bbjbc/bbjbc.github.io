@@ -50,3 +50,5 @@ sidebar-category:
         url: /algorithm/
       - title: "redux"
         url: /redux/
+      - title: "jotai"
+        url: /jotai/
