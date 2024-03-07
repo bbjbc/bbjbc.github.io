@@ -8,7 +8,7 @@ sidebar_main: true
 <div align="center">
 <br/>
 
-<img src="https://github.com/bbjbc/bbjbc.github.io/assets/102457140/12f44c3b-b0fe-4c6a-b99e-38596b73145b" width="450" /><br>
+<img src="https://github.com/bbjbc/bbjbc.github.io/assets/102457140/12f44c3b-b0fe-4c6a-b99e-38596b73145b" width="300" /><br>
 
 <h1><b>🐶 최고의 열정을 뽐내는 Boongranii</b></h1>
 
