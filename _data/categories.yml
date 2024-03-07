@@ -1,4 +1,6 @@
 ---
+jekyll:
+  image: ../assets/images/jekyll.jpg
 jotai:
   image: ../assets/images/jotai.png
 redux:
