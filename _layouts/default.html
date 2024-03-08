@@ -14,6 +14,16 @@
     {% include head/custom.html %}
   </head>
   <style>
+    ::-webkit-scrollbar {width: 12px;}
+    ::-webkit-scrollbar-thumb {background-color:#293d29; border-radius: 8px;}
+    ::-webkit-scrollbar-thumb:hover {background: #d8b036;}
+    ::-webkit-scrollbar-button:start:decrement,
+    ::-webkit-scrollbar-button:end:increment 
+      {
+          width: 12px;
+          background: transparent;
+      } 
+
     /* 기본 스크롤바 스타일 */
     .sidebar {
         overflow: hidden;
@@ -40,9 +50,40 @@
     .sidebar:hover::-webkit-scrollbar-thumb {
         background-color: #9fbe9f; 
     }
+
+    .progress-bar {
+      background: linear-gradient(to right, rgb(133, 151, 15) var(--scroll), transparent 0);
+      background-repeat: no-repeat;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      z-index: 9000;
+    }
 </style>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+  
+  <!-- progress-bar를 보여줌 -->
+  <div class="progress-bar"></div>
+  
+  
+  <!-- 현재 스크롤 백분율 값을 가진 --scroll 변수를 생성하는 스크립트 -->
+  <script>
+    var element = document.documentElement,
+      body = document.body,
+      scrollTop = 'scrollTop',
+      scrollHeight = 'scrollHeight',
+      progress = document.querySelector('.progress-bar'),
+      scroll;
+  
+    document.addEventListener('scroll', function() {
+      scroll = (element[scrollTop]||body[scrollTop]) / ((element[scrollHeight]||body[scrollHeight]) - element.clientHeight) * 100;
+      progress.style.setProperty('--scroll', scroll + '%');
+    });
+  </script>
+
     {% include_cached skip-links.html %}
     {% include_cached masthead.html %}
 
