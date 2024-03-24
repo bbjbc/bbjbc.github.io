@@ -1,4 +1,6 @@
 ---
+os:
+  image: ../assets/images/os.png
 jekyll:
   image: ../assets/images/jekyll.jpg
 jotai:
