@@ -1,4 +1,4 @@
-\*---
+---
 title: "[OS] 프로세스 스케줄링"
 categories: [os]
 tags: [os, process, scheduling, switching]
@@ -7,7 +7,6 @@ sidebar_main: true
 main: true
 toc: true
 toc_sticky: true
-
 ---
 
 # 쉰 네 번째 포스팅
