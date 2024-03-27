@@ -1,4 +1,6 @@
 ---
+leetcode:
+  image: ../assets/images/leetcode.png
 os:
   image: ../assets/images/os.png
 jekyll:
