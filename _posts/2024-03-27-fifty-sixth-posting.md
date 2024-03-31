@@ -22,7 +22,7 @@ toc_sticky: true
 
 # 1️⃣ 문제
 
-[**[프로그래머스] Subarray Product Less Than K (문제 링크)**](https://leetcode.com/problems/subarray-product-less-than-k/description/?envType=daily-question&envId=2024-03-27)
+[**[Leetcode] Subarray Product Less Than K (문제 링크)**](https://leetcode.com/problems/subarray-product-less-than-k/description/?envType=daily-question&envId=2024-03-27)
 
 ## 💨 **문제 설명**
 
