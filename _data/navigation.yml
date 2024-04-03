@@ -58,3 +58,5 @@ sidebar-category:
         url: /os/
       - title: "leetcode"
         url: /leetcode/
+      - title: "cryptography"
+        url: /cryptography/

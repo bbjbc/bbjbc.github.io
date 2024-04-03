@@ -1,4 +1,6 @@
 ---
+cryptography:
+  image: ../assets/images/cryptography.png
 leetcode:
   image: ../assets/images/leetcode.png
 os:
