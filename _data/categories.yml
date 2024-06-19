@@ -1,4 +1,6 @@
 ---
+tanstack-query:
+  image: ../assets/images/react-query.png
 cryptography:
   image: ../assets/images/cryptography.png
 leetcode:
