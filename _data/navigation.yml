@@ -62,3 +62,5 @@ sidebar-category:
         url: /cryptography/
       - title: "tanstack-query"
         url: /tanstack-query/
+      - title: "baekjoon"
+        url: /baekjoon/

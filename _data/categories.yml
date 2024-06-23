@@ -1,4 +1,6 @@
 ---
+baekjoon:
+  image: ../assets/images/baekjoon.png
 tanstack-query:
   image: ../assets/images/react-query.png
 cryptography:
