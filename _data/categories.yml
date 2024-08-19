@@ -1,4 +1,6 @@
 ---
+udemy-sniperfactory:
+  image: ../assets/images/udemy.png
 baekjoon:
   image: ../assets/images/baekjoon.png
 tanstack-query:
