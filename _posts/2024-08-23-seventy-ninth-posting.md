@@ -263,6 +263,57 @@ export default UseRef;
 
 `useRef`는 렌더링 성능 최적화와 특정 DOM 접근이 필요한 경우에 사용하고, `useState`는 UI 업데이트와 연관된 상태 관리에 사용한다.
 
+### ✊ 컴포넌트에서 `ref`를 사용하는 방법
+
+React에서는 DOM 요소나 자식 컴포넌트에 직접 접근해야 할 때 `ref`를 사용한다. 하지만 컴포넌트에 `ref`를 전달할 때는 `ref`를 받을 수 있는 타입을 지정해야 제대로 사용할 수 있다.
+
+> 💥 **`ref`와 `forwardRef`가 몽데요**
+
+위에서 언급했듯이, `ref`는 React에서 DOM 요소나 자식 컴포넌트에 직접 접근할 수 있는 방법이다. `input` 태그에 `ref`를 사용하면 JavaScript를 통해 해당 요소에 직접 접근하여 조작이 가능하다.
+
+하지만 일반적인 컴포넌트에는 `ref`를 바로 사용할 수 없으며, 이 경우에는 `forwardRef`라는 함수를 사용해야 한다.
+
+`forwardRef`는 React에서 제공하는 고차 함수로 컴포넌트가 자신에게 전달된 `ref`를 DOM 요소나 다른 자식 컴포넌트에 전달할 수 있게 해준다.
+
+> 💥 **`forwardRef`는 어떻게 사용하는데요**
+
+`forwardRef`를 사용하면 `ref`를 부모 컴포넌트에서 자식 컴포넌트로 전달할 수 있다.
+
+```tsx
+import { forwardRef } from "react";
+
+type TInputProps = React.ComponentPropsWithRef<"input">;
+
+const Input = forwardRef<HTMLInputElement, TInputProps>((props, ref) => {
+  const { ...rest } = props;
+
+  return <input ref={ref} {...rest} />;
+});
+
+Input.displayName = "Input";
+
+export default Input;
+```
+
+위 코드에서 `Input` 컴포넌트는 `forwardRef`를 사용하여 `ref`를 전달받고, 이를 `input` 요소에 전달한다. `forwardRef`를 사용할 때는 첫 번째 타입 인자로 `ref`가 참조할 수 있는 요소의 타입인 `HTMLInputElement`를, 두 번째 타입 인수로 컴포넌트의 props 타입인 `TInputProps`를 지정한다.
+
+> 💥 **`displayName`은 왜 써용**
+
+```jsx
+Input.displayName = "Input";
+```
+
+`forwardRef`로 컴포넌트를 감싸면 React DevTools에서 디버깅할 때 컴포넌트 이름이 `ForwardRef`로 표시된다. 그러므로 `displayName`을 명시적으로 지정해줘야 디버깅이나 빌드 시 오류를 피할 수 있다.
+
+> 💥 **`ComponentPropsWithRef` vs. `ComponentPropsWithoutRef`**
+
+- **`ComponentPropsWithoutRef<T>`** <br />
+  지정한 컴포넌트 타입 `T`의 props 타입을 추출하지만 `ref`는 포함되지 않는다.
+- **`ComponentPropsWithRef<T>`** <br />
+  지정한 컴포넌트 타입 `T`의 props 타입을 추출하며, `ref`도 포함된다.
+
+위 둘은 성능상으로는 큰 차이는 없다. 이들은 타입 시스템에서만 작동하기 때문에 런타임 성능에 영향을 미치지 않는다. 대신에 어떤 props 타입이 필요한지에 따라 올바른 유틸리티 타입을 선택하는 것이 중요하다.
+
 ---
 
 # 2️⃣ 느낀점
