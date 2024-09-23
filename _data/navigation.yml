@@ -26,6 +26,8 @@ sidebar-category:
         url: /categories/
   - title: "STUDIARY"
     children:
+      - title: "dev-camp"
+        url: /dev-camp/
       - title: "udemy-sniperfactory"
         url: /udemy-sniperfactory/
       - title: "react"

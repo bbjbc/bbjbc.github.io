@@ -1,4 +1,6 @@
 ---
+dev-camp:
+  image: ../assets/images/devcamp.png
 udemy-sniperfactory:
   image: ../assets/images/udemy.png
 baekjoon:
